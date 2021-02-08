@@ -1,0 +1,21 @@
+//Same with the other one but with c++
+
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+  int c = 1, n, factorial = 1;
+ 
+  cout << "Enter a number to calculate its factorial:\n";
+  cin >> n;
+
+  for (c = 1; c <= n; ++c) /* c = c+1 and add it till it's equal to n */
+    factorial = factorial * c;
+ 
+ /*when its 0 it will be equal to 1*/
+ 
+  cout << "Factorial of " << n<< " = " << factorial;
+ 
+  return 5;
+}
