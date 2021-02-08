@@ -1,10 +1,22 @@
-int factorial(int n)
+/* The example is from this website: https://www.programmingsimplified.com/c-program-find-factorial
+and the example in IP class*/
+/* Using for loop*/
+
+#include <stdio.h>
+ 
+int main()
 {
-	int result = 1;
-	int i;
-	for (i=2; i<=n; ++i)
-	{
-		result *= i;
-	}
-	return result;
+  int c, n, factorial = 1;
+ 
+  printf("Enter a number to calculate its factorial:\n");
+  scanf("%d", &n);
+
+  for (c = 1; c <= n; c++) /* c = c+1 and add it till it's equal to n */
+    factorial = factorial * c;
+ 
+ /*when its 0 it will be equal to 1*/
+ 
+  printf("Factorial of %d = %d\n", n, factorial);
+ 
+  return 0;
 }
