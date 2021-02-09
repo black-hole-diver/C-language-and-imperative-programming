@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+	float first;
+	float second;
+	
+	printf("Add first number: \n");
+	scanf("%f", &first);
+	
+	printf("Add second number: \n");
+	scanf("%f", &second);
+	
+	printf("The result of %f / %f is %f", first, second, first/second);
+	
+	return 0;
+}
