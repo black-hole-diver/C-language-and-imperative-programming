@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+	char first,second;
+	
+	printf("Give me your chromosome: \n");
+	scanf("%d", first);
+	
+	printf("Give me your 2nd chromosome: \n");
+	scanf("%d", second);
+	
+	if (first == '+' || second == '+'){
+		printf("Rh+");
+	}
+	else if (first == '-' && second == '-'){
+		printf("Rh-");
+	}
+	else{
+		printf("Write + or -!");
+	}
+	
+	return 0;
+}
