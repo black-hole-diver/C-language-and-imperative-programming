@@ -4,6 +4,6 @@ int main()
 {
 	printf("%ld\n", sizeof(int)); // 4 bytes on my machine: 11111111 11111111 11111111 11111111 11111111, 32 bites
 	int x = 2147483648;//2^31 biggest number we can store an int
-	printf("%ld\n", x*2);
+	printf("%ld\n", x*2); //multiply by 2
 	return 0;
 }
